@@ -1,8 +1,8 @@
 # Deetector - ExpressionEngine device- and feature-detection add-on
 
-An ExpressionEngine plugin of the [Detector library](http://detector.dmolsen.com/) - a simple, PHP- and JavaScript-based browser- and feature-detection library that can adapt to new devices & browsers on its own without the need to pull from a central database of browser information.
+An ExpressionEngine plugin of the [Detector library](http://detector.dmolsen.com/) - a simple, PHP- and javascript-based browser- and feature-detection library that can adapt to new devices & browsers on its own without the need to pull from a central database of browser information.
 
-**Note:** Some of the variables listed below (indicated with comments) require a script to be added to the &lt;head> of your page which accesses the Detector library. Because of this, the Detector library
+**Note:** Some of the variables listed below (indicated with comments) require a script to be added to the &lt;head> of your page which accesses the Detector library. Because of this, the Detector library is included in the third_party themes folder, rather than the third_party add-ons folder.
 
 ##Usage
 
@@ -14,8 +14,6 @@ Some of the variables (indicated with comments below) require the following to b
 
 &lt;script src="/themes/third_party/deetector/libraries/util/js-include/features.js.php?dynamic=true">&lt;/script>
 &lt;script src="/themes/third_party/deetector/libraries/util/js-include/tests.js">&lt;/script>
-
-Because of this, the Detector library is included in the third_party themes folder, rather than the third_party add-ons folder.
 
 ##Example
 

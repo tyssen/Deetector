@@ -12,8 +12,8 @@ Add the {exp:deetector} tag pair anywhere in your template to gain access to its
 
 Some of the variables (indicated with comments below) require the following to be added to the &lt;head> of your page.
 
-&lt;script src="/themes/third_party/deetector/libraries/util/js-include/features.js.php?dynamic=true">&lt;/script>
-&lt;script src="/themes/third_party/deetector/libraries/util/js-include/tests.js">&lt;/script>
+	&lt;script src="/themes/third_party/deetector/libraries/util/js-include/features.js.php?dynamic=true">&lt;/script>
+	&lt;script src="/themes/third_party/deetector/libraries/util/js-include/tests.js">&lt;/script>
 
 ##Example
 

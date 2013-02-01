@@ -44,7 +44,7 @@ class Deetector {
 	{
 		$this->EE =& get_instance();
 
-		include(PATH_THIRD_THEMES.'deetector/libraries/detector.php');
+		include(PATH_THIRD_THEMES.'deetector/libraries/Detector.php');
 
 		// Save the local $ua variable so we can use it in other functions further down
 
@@ -64,9 +64,9 @@ class Deetector {
 		// Browser features
 
 		$css3_features = array('fontface','backgroundsize','borderimage','borderradius','boxshadow','flexbox','hsla','multiplebgs','opacity','rgba','textshadow','cssanimations','csscolumns','generatedcontent','cssgradients','cssreflections','csstransforms','csstransforms3d','csstransitions','overflowscrolling','bgrepeatround','bgrepeatspace','bgsizecover','boxsizing','cubicbezierrange','cssremunit','cssresize','cssscrollbar');
-		$html5_features = array('adownload','applicationcache','canvas','canvastext','draganddrop','hashchange','history','indexeddb','localstorage','postmessage','sessionstorage','websockets','websqldatabase','webworkers','contenteditable','webaudio','audiodata','userselect','dataview','microdata','progressbar','meter','createelement-attrs','time','geolocation','devicemotion','deviceorientation','speechinput','filereader','filesystem','fullscreen','formvalidation','notification','performance','quotamanagement','scriptasync','scriptdefer','webintents','websocketsbinary','blobworkers','dataworkers','sharedworkers','audio','video','input','inputtypes');
+		$html5_features = array('adownload','applicationcache','canvas','canvastext','draganddrop','hashchange','history','indexeddb','localstorage','postmessage','sessionstorage','websockets','websqldatabase','webworkers','contenteditable','webaudio','audiodata','userselect','dataview','microdata','progressbar','meter','createelement-attrs','time','geolocation','devicemotion','deviceorientation','speechinput','filereader','filesystem','fullscreen','formvalidation','notification','performance','quotamanagement','scriptasync','scriptdefer','webintents','websocketsbinary','blobworkers','dataworkers','sharedworkers');
 		// $features_causing_errors = array('audio','video','input','inputtypes'); // Object of class stdClass could not be converted to int
-		$misc_features = array('touch','webgl','json','lowbattery','cookies','battery','gamepad','lowbandwidth','eventsource','ie8compat','unicode');
+		$misc_features = array('touch','webgl','json','lowbattery','cookies','battery','gamepad','lowbandwidth','eventsource','ie8compat','unicode','hirescapable');
 		$features = array_merge($css3_features, $html5_features, $misc_features);
 
 		foreach($features as $feature)
@@ -81,7 +81,7 @@ class Deetector {
 
 		// Variables that might not exist so need to check first
 
-		$check_array = array('device','devicemajor','deviceminor','devicefull','deviceversion','hirescapable');
+		$check_array = array('device','devicemajor','deviceminor','devicefull','deviceversion');
 
 		foreach($check_array as $check)
 		{

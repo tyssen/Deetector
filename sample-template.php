@@ -83,11 +83,11 @@
 	draganddrop = {draganddrop} <br>
 	hashchange = {hashchange} <br>
 	history = {history} <br>
-	audio = {audio} <br>
-	video = {video} <br>
-	indexeddb = {indexeddb} <br>
-	input = {input} <br>
-	inputtypes = {inputtypes} <br>
+	{!-- {audio} Commented out because causing errors <br> --}
+	{!-- {video} Commented out because causing errors  <br> --}
+	{indexeddb}
+	{!-- {input}      Commented out because causing errors  <br> --}
+	{!-- {inputtypes} Commented out because causing errors  <br> --}
 	localstorage = {localstorage} <br>
 	postmessage = {postmessage} <br>
 	sessionstorage = {sessionstorage} <br>

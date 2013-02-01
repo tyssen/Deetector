@@ -99,11 +99,11 @@ Some of the variables (indicated with comments below) require the following to b
 	{draganddrop}
 	{hashchange}
 	{history}
-	{audio}
-	{video}
+	{!-- {audio} Commented out because causing errors --}
+	{!-- {video} Commented out because causing errors  --}
 	{indexeddb}
-	{input}
-	{inputtypes}
+	{!-- {input}      Commented out because causing errors  --}
+	{!-- {inputtypes} Commented out because causing errors  --}
 	{localstorage}
 	{postmessage}
 	{sessionstorage}

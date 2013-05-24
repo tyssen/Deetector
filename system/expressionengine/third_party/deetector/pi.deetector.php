@@ -81,7 +81,7 @@ class Deetector {
 
 		// Variables that might not exist so need to check first
 
-		$check_array = array('device','devicemajor','deviceminor','devicefull','deviceversion');
+		$check_array = array('device','deviceMajor','deviceMinor','deviceFull','deviceVersion');
 
 		foreach($check_array as $check)
 		{
@@ -118,10 +118,10 @@ class Deetector {
 			'os_version'        => $this->ua->osVersion,
 			'core_version'      => $this->ua->coreVersion,
 			'device'            => $device,
-			'device_major'      => $devicemajor,
-			'device_minor'      => $deviceminor,
-			'device_full'       => $devicefull,
-			'device_version'    => $deviceversion,
+			'device_major'      => $deviceMajor,
+			'device_minor'      => $deviceMinor,
+			'device_full'       => $deviceFull,
+			'device_version'    => $deviceVersion,
 			'hi_res_capable'    => $hirescapable,  // Requires per-session tests
 			'window_height'     => $windowHeight,  // Requires per-request tests
 			'window_width'      => $windowWidth,   // Requires per-request tests

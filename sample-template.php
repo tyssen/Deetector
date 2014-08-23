@@ -2,7 +2,6 @@
 <head>
 	<title>Detector Plugin Test</title>
 	<script src="/themes/third_party/deetector/libraries/util/js-include/features.js.php?dynamic=true"></script>
-	<script src="/themes/third_party/deetector/libraries/util/js-include/tests.js"></script>
 </head>
 <body>
 

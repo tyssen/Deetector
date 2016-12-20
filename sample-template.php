@@ -1,7 +1,11 @@
 <html>
 <head>
 	<title>Detector Plugin Test</title>
-	<script src="/themes/third_party/deetector/libraries/util/js-include/features.js.php?dynamic=true"></script>
+	<!--
+	EE2
+	<script src="/themes/third_party/deetector/libraries/util/js-include/features.js.php?dynamic=true"></script> -->
+	<!-- EE3 -->
+	<script src="/themes/user/deetector/libraries/util/js-include/features.js.php?dynamic=true"></script>
 </head>
 <body>
 
@@ -118,7 +122,6 @@
 	scriptdefer = {scriptdefer} <br>
 	webintents = {webintents} <br>
 	websocketsbinary = {websocketsbinary} <br>
-	blobworkers = {blobworkers} <br>
 	dataworkers = {dataworkers} <br>
 	sharedworkers = {sharedworkers}
 

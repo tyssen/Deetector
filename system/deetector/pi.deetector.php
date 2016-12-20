@@ -1,33 +1,17 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 /**
- * ExpressionEngine - by EllisLab
- *
- * @package		ExpressionEngine
- * @author		ExpressionEngine Dev Team
- * @copyright	Copyright (c) 2003 - 2011, EllisLab, Inc.
- * @license		http://expressionengine.com/user_guide/license.html
- * @link		http://expressionengine.com
- * @since		Version 2.0
- * @filesource
- */
-
-// ------------------------------------------------------------------------
-
-/**
  * Deetector Plugin
  *
- * @package		ExpressionEngine
- * @subpackage	Addons
- * @category	Plugin
+ * @package		deetector
  * @author		John Faulds ~ <enquiries@tyssendesign.com.au>
- * @link		http://www.tyssendesign.com.au
+ * @link			https://github.com/tyssen/Deetector
  * @license		http://creativecommons.org/licenses/by-sa/3.0/
  */
 
 $plugin_info = array(
 	'pi_name'        => 'Deetector',
-	'pi_version'     => '1.0.0',
+	'pi_version'     => '1.1.0',
 	'pi_author'      => 'John Faulds',
 	'pi_author_url'  => 'https://github.com/tyssen/Deetector',
 	'pi_description' => '<p>An ExpressionEngine plugin of the <a href="http://detector.dmolsen.com/">Detector library</a> - a simple, PHP- and JavaScript-based browser- and feature-detection library that can adapt to new devices & browsers on its own without the need to pull from a central database of browser information.</p><p><strong>Note:</strong> Some of the variables listed below (indicated with comments) require a script to be added to the &lt;head> of your page which accesses the Detector library. Because of this, the Detector library is included in the third_party themes folder, rather than the third_party add-ons folder.</p>',
@@ -42,7 +26,7 @@ class Deetector {
 	 */
 	public function __construct()
 	{
-		$this->EE =& get_instance();
+		$this->EE = get_instance();
 
 		include(PATH_THIRD_THEMES.'deetector/libraries/Detector.php');
 
@@ -64,8 +48,8 @@ class Deetector {
 		// Browser features
 
 		$css3_features = array('fontface','backgroundsize','borderimage','borderradius','boxshadow','flexbox','hsla','multiplebgs','opacity','rgba','textshadow','cssanimations','csscolumns','generatedcontent','cssgradients','cssreflections','csstransforms','csstransforms3d','csstransitions','overflowscrolling','bgrepeatround','bgrepeatspace','bgsizecover','boxsizing','cubicbezierrange','cssremunit','cssresize','cssscrollbar');
-		$html5_features = array('adownload','applicationcache','canvas','canvastext','draganddrop','hashchange','history','indexeddb','localstorage','postmessage','sessionstorage','websockets','websqldatabase','webworkers','contenteditable','webaudio','audiodata','userselect','dataview','microdata','progressbar','meter','createelement-attrs','time','geolocation','devicemotion','deviceorientation','speechinput','filereader','filesystem','fullscreen','formvalidation','notification','performance','quotamanagement','scriptasync','scriptdefer','webintents','websocketsbinary','blobworkers','dataworkers','sharedworkers');
-		// $features_causing_errors = array('audio','video','input','inputtypes'); // Object of class stdClass could not be converted to int
+		$html5_features = array('adownload','applicationcache','canvas','canvastext','draganddrop','hashchange','history','indexeddb','localstorage','postmessage','sessionstorage','websockets','websqldatabase','webworkers','contenteditable','webaudio','audiodata','userselect','dataview','microdata','progressbar','meter','createelement-attrs','time','geolocation','devicemotion','deviceorientation','speechinput','filereader','filesystem','fullscreen','formvalidation','notification','performance','quotamanagement','scriptasync','scriptdefer','webintents','websocketsbinary','dataworkers','sharedworkers');
+		// $features_causing_errors = array('audio','video','input','inputtypes','blobworkers'); // Object of class stdClass could not be converted to int
 		$misc_features = array('touch','webgl','json','lowbattery','cookies','battery','gamepad','lowbandwidth','eventsource','ie8compat','unicode','hirescapable');
 		$features = array_merge($css3_features, $html5_features, $misc_features);
 
@@ -151,7 +135,7 @@ class Deetector {
 		ob_start();
 ?>
 
-Make sure the Detector directories user-agents/core/, user-agents/extended/, and config are writable by your web server. This is where profiles &amp; configuration information are stored.
+Make sure the Detector directories user-agents/core/, user-agents/extended/, and config are writeable by your web server. This is where profiles &amp; configuration information are stored.
 
 Add the {exp:deetector} tag pair anywhere in your template to gain access to its variables.
 
@@ -282,7 +266,6 @@ Example:
 {scriptdefer}
 {webintents}
 {websocketsbinary}
-{blobworkers}
 {dataworkers}
 {sharedworkers}
 
@@ -310,4 +293,4 @@ Example:
 
 
 /* End of file pi.deetector.php */
-/* Location: /system/expressionengine/third_party/deetector/pi.deetector.php */
+/* Location: /system/…/deetector/pi.deetector.php */

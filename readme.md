@@ -12,7 +12,7 @@ Add the {exp:deetector} tag pair anywhere in your template to gain access to its
 
 Some of the variables (indicated with comments below) require the following to be added to the &lt;head> of your page.
 
-	<script src="/themes/third_party/deetector/libraries/util/js-include/features.js.php?dynamic=true"></script>
+	<script src="/themes/…/deetector/libraries/util/js-include/features.js.php?dynamic=true"></script>
 
 ##Example
 
@@ -134,7 +134,6 @@ Some of the variables (indicated with comments below) require the following to b
 	{scriptdefer}
 	{webintents}
 	{websocketsbinary}
-	{blobworkers}
 	{dataworkers}
 	{sharedworkers}
 
